@@ -43,6 +43,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- tuboplus -->
 		<div id="tuboplus" class="row align-items-center">
 			<div class="col-12 p-3 | col-md-4 offset-md-1">
@@ -56,7 +57,7 @@
 			</div>
 		</div>
 		<!-- soluciones residenciales -->
-		<div id="soluciones-residenciales" class="row bg-grey-1">
+		<div id="soluciones-residenciales" class="row bg-grey-1" v-if="utmPrincipal=='residenciales'  || utmPrincipal=='' ">
 			<div class="col-12 | col-md-4 offset-md-1">
 				<h2 class="bold blue-5">Soluciones Residenciales</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -130,7 +131,7 @@
 			</div>
 		</div>
 		<!-- soluciones especializadas -->
-		<div id="soluciones-especializadas" class="row align-items-center">
+		<div id="soluciones-especializadas" class="row align-items-center" v-if="utmPrincipal=='especializadas' || utmPrincipal=='' ">
 			<div class="col-12 order-2 | col-md-4 order-md-1 offset-md-1">
 				<h2 class="bold blue-5">Soluciones Especializadas</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -242,10 +243,25 @@
 <script>
 	export default {
 		name: 'home',
+		data() {
+			return {
+				utmPrincipal: "",
+			};
+		},
 		head() {
 			return {
 				title: 'Tuboplus | Inicio'
 			}
+		},
+		created() {
+
+			// Condicional para mostrar contenido segun el UTM
+			if (this.$route.query.utm_campaign != null && (this.$route.query.utm_campaign == 'plomero' || this.$route.query.utm_campaign == 'plomeria')) {
+				this.utmPrincipal = "residenciales";
+			} else if (this.$route.query.utm_campaign != null && (this.$route.query.utm_campaign == 'empresa' || this.$route.query.utm_campaign == 'empresarial')) {
+				this.utmPrincipal = "especializadas";
+			}
+			console.log(this.utmPrincipal);
 		},
 		methods: {
 			sliderInicio() {
