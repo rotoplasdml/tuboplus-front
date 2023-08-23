@@ -47,7 +47,7 @@
 </script>
 
 
-<style>
+<style scoped>
 	nav {
 		background-color: rgba(255, 255, 255, .75);
 	}

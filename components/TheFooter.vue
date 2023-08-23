@@ -64,7 +64,7 @@
 </script>
 
 
-<style>
+<style scoped>
     footer {
         padding-top: 3rem;
         padding-bottom: 2rem;

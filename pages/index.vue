@@ -330,7 +330,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	#tuboplus,
 	#soluciones-residenciales,
 	#ultimas-novedades {
