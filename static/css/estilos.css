@@ -164,3 +164,16 @@ a {
         transform: translateY(8px);
     }
 /* hover */
+
+/* ==============================================================
+/*	Spacers
+/* ============================================================== */
+
+    .mt-banner {
+        margin-top: 110px !important;
+    }
+
+    .mx-space {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }

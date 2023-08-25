@@ -1,5 +1,5 @@
 <template>
-	<nav class="navbar navbar-expand-lg px-3 fixed-top">
+	<nav class="navbar navbar-expand-lg mx-space fixed-top">
 		<NuxtLink class="navbar-brand" to="/">
 			<img id="nav-logo" src="/imagenes/comun/tuboplus-logo.svg" alt="Tuboplus Logo" title="Tuboplus">
 		</NuxtLink>

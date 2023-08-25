@@ -39,36 +39,36 @@ export default {
         product1: {
           image:
             "/imagenes/soluciones-especializadas/soluciones-especializadas-alta-presion.jpg",
-          title: "Tuboplus® hidráulico (PP-R)",
-          subTitle: "Suministro baja presión",
+          title: "Tuboplus Alta Presión (PPR-CT)",
+          subTitle: "Suministro alta presión",
           link: "/",
         },
         product2: {
           image:
             "/imagenes/soluciones-especializadas/soluciones-especializadas-aire-acondicionado.jpg",
-          title: "Manguera flexible Tuboplus",
-          subTitle: "Conexión de muebles",
+          title: "Tuboplus para Aire Acondicionado",
+          subTitle: "Refrigeración / Calefacción",
           link: "/",
         },
         product3: {
           image:
             "/imagenes/soluciones-especializadas/soluciones-especializadas-contra-incendio.jpg",
-          title: "Abrazaderas y soportería",
-          subTitle: "Sujeción",
+          title: "Tuboplus Contraincendio (PPR-CT RP+FV)",
+          subTitle: "Seguridad",
           link: "/",
         },
         product4: {
           image:
             "/imagenes/soluciones-especializadas/soluciones-especializadas-tuberia-sanitaria.jpg",
-          title: "Bombas",
-          subTitle: "Presurización",
+          title: "Tuboplus tubería sanitaria",
+          subTitle: "Drenaje y desagüe",
           link: "/",
         },
         product5: {
           image:
             "/imagenes/soluciones-especializadas/soluciones-especializadas-herramientas.jpg",
-          title: "Válvulas",
-          subTitle: "Control",
+          title: "Herramientas",
+          subTitle: "Instrumental",
           link: "/",
         },
       },
