@@ -22,6 +22,9 @@
     <div class="row mb-4">
       <ProcesoInstalacion />
     </div>
+    <div class="row mb-4">
+      <Diametros />
+    </div>
   </div>
   
 </template>
@@ -32,10 +35,11 @@ import AptoParaUso from "../../components/ProductsComponents/AptoParaUso.vue";
 import CodigoEscaneable from "../../components/ProductsComponents/CodigoEscaneable.vue";
 import Descargables from "../../components/ProductsComponents/Descargables.vue";
 import ProcesoInstalacion from "../../components/ProductsComponents/ProcesoInstalacion.vue";
+import Diametros from "../../components/ProductsComponents/Diametros.vue";
 import TheBim from "../../components/Soluciones/TheBim.vue";
 export default {
   name: "ProductPage",
-  components: { ProductBanner, AptoParaUso, CodigoEscaneable, Descargables, TheBim, ProcesoInstalacion },
+  components: { ProductBanner, AptoParaUso, CodigoEscaneable, Descargables, TheBim, ProcesoInstalacion, Diametros },
   data() {
     return {
       id: this.$route.params.id,
